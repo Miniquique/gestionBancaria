@@ -19,6 +19,7 @@
                 EVALUATE WK-OPCION
                     WHEN 1
                         DISPLAY 'CREAR CUENTA'
+                        CALL 'cuentas' USING OPCION
                     WHEN 2
                         DISPLAY 'CONSULTAR CUENTA'
                     WHEN 3
