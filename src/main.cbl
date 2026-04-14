@@ -25,6 +25,7 @@
                         CALL "LEER-CUENTAS" USING WK-OPCION
                     WHEN 3
                         DISPLAY 'MOVIMIENTO'
+                        CALL "MOVIMIENTOS-CUENTAS" USING WK-OPCION
                     WHEN 4
                         MOVE 'S' TO WK-SALIR
                     WHEN OTHER
