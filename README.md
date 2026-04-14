@@ -1,10 +1,22 @@
 # Gestión Bancaria
 
-[![COBOL](https://img.shields.io/badge/Language-COBOL-red?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRleHQgeD0iNiIgeT0iMTgiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIj5DPC90ZXh0Pjwvc3ZnPg==)](https://en.wikipedia.org/wiki/COBOL)
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)](https://github.com/Miniquique/gestionBancaria)
-[![License](https://img.shields.io/badge/License-Educational-blue?style=flat-square)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Linux%2FUnix-orange?style=flat-square)](https://www.linux.org/)
-[![GnuCOBOL](https://img.shields.io/badge/Compiler-GnuCOBOL-success?style=flat-square)](https://sourceforge.net/projects/gnucobol/)
+<p align="center">
+  <a href="https://en.wikipedia.org/wiki/COBOL" target="_blank">
+    <img src="https://img.shields.io/badge/Language-COBOL-red?style=flat-square" alt="COBOL">
+  </a>
+  <a href="https://github.com/Miniquique/gestionBancaria" target="_blank">
+    <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
+  </a>
+  <a href="LICENSE" target="_blank">
+    <img src="https://img.shields.io/badge/License-Educational-blue?style=flat-square" alt="License">
+  </a>
+  <a href="https://www.linux.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Platform-Linux%2FUnix-orange?style=flat-square" alt="Platform">
+  </a>
+  <a href="https://sourceforge.net/projects/gnucobol/" target="_blank">
+    <img src="https://img.shields.io/badge/Compiler-GnuCOBOL-success?style=flat-square" alt="GnuCOBOL">
+  </a>
+</p>
 
 Sistema de gestión de cuentas bancarias desarrollado en **COBOL** utilizando GnuCOBOL. La aplicación permite crear cuentas, consultar saldos y realizar movimientos (depósitos y retiros) con persistencia de datos en archivos secuenciales.
 
