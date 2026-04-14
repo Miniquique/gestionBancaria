@@ -1,5 +1,5 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. cuentas.
+       PROGRAM-ID. CREAR-CUENTAS.
        
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
@@ -12,24 +12,31 @@
            01 REGISTRO.
                05 NUMERO PIC 9(6). 
                05 NOMBRE PIC X(50).
+               05 SALDO PIC 9(7)V99.
            WORKING-STORAGE SECTION.
            01 REGISTRO-CUENTA.
               02 NUMERO-CUENTA    PIC 9(6).
               02 NOMBRE-CLIENTE   PIC X(50).
-              02 SALDO            PIC 9(7)V99.
-       PROCEDURE DIVISION.
+              02 SALDO-CLIENTE    PIC 9(7)V99.
+           LINKAGE SECTION.
+           01 P-OPCION PIC 9.
+       PROCEDURE DIVISION USING P-OPCION.
+       PERFORM CREAR-CUENTA.
+        GOBACK.
+       CREAR-CUENTA.
        OPEN EXTEND FICHERO.
            DISPLAY 'cual es el numero de cuenta?(max 6 digitos[123456])'
            ACCEPT NUMERO-CUENTA.
            MOVE NUMERO-CUENTA TO NUMERO.
-
-           MOVE 'DAVID' TO NOMBRE-CLIENTE.
+           MOVE 'CLIENTE' TO NOMBRE-CLIENTE.
            DISPLAY 'cual es el NOMBRE DEL CLIENTE?)'
-           ACCEPT NOMBRE-CLIENTE.           
+           ACCEPT NOMBRE-CLIENTE.
            MOVE NOMBRE-CLIENTE TO NOMBRE(1:50).
+           DISPLAY 'SALDO INICIAL DEL CLIENTE?'
+           ACCEPT SALDO-CLIENTE.
+           MOVE SALDO-CLIENTE TO SALDO.
            WRITE REGISTRO.
-           display REGISTRO-CUENTA.
-           
+           DISPLAY REGISTRO-CUENTA.
+
        CLOSE FICHERO.
-       STOP RUN.
-       END PROGRAM cuentas.
+       END PROGRAM CREAR-CUENTAS.

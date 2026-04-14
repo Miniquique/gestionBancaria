@@ -19,9 +19,10 @@
                 EVALUATE WK-OPCION
                     WHEN 1
                         DISPLAY 'CREAR CUENTA'
-                        CALL 'cuentas' USING OPCION
+                        CALL "CREAR-CUENTAS" USING WK-OPCION
                     WHEN 2
                         DISPLAY 'CONSULTAR CUENTA'
+                        CALL "LEER-CUENTAS" USING WK-OPCION
                     WHEN 3
                         DISPLAY 'MOVIMIENTO'
                     WHEN 4
