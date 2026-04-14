@@ -15,12 +15,14 @@
                05 SALDO PIC 9(7)V99.
            WORKING-STORAGE SECTION.
            01 WK-FIN-FICHERO PIC X VALUE 'N'.
+           01 WK-PAUSA PIC X.
            LINKAGE SECTION.
            01 P-OPCION PIC 9.
        PROCEDURE DIVISION USING P-OPCION.
        PERFORM LEER-CUENTA.
         GOBACK.
        LEER-CUENTA.
+         MOVE 'N' TO WK-FIN-FICHERO.
          OPEN INPUT FICHERO.
          PERFORM UNTIL WK-FIN-FICHERO = 'S'
               READ FICHERO
@@ -30,6 +32,9 @@
                      DISPLAY REGISTRO
               END-READ
             END-PERFORM.
+
+       DISPLAY 'PRESIONE ENTER PARA CONTINUAR...'
+       ACCEPT WK-PAUSA.
 
        CLOSE FICHERO.
        END PROGRAM LEER-CUENTAS.
