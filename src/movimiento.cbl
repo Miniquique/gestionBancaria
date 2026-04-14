@@ -14,17 +14,17 @@
            01 REGISTRO-IN.
                05 NUMERO-I PIC 9(6).
                05 NOMBRE-I PIC X(50).
-               05 SALDO-I PIC 9(7)V99.
+               05 SALDO-I PIC s9(7)V99.
            FD FICHERO-OUT.
            01 REGISTRO-OUT.
                05 NUMERO-O PIC 9(6).
                05 NOMBRE-O PIC X(50).
-               05 SALDO-O PIC 9(7)V99.
+               05 SALDO-O PIC s9(7)V99.
            WORKING-STORAGE SECTION.
            01 WK-FIN-FICHERO PIC X VALUE 'N'.
            01 WK-PAUSA PIC X.
            01 WK-NUMERO-CUENTA PIC 9(6).
-           01 WK-MOVIMIENTO PIC 9(7)V99 VALUE ZERO.
+           01 WK-MOVIMIENTO PIC s9(7)V99 VALUE ZERO.
            LINKAGE SECTION.
            01 P-OPCION PIC 9.
        PROCEDURE DIVISION USING P-OPCION.
