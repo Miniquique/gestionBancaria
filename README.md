@@ -1,13 +1,19 @@
 # Gestión Bancaria
 
+[![COBOL](https://img.shields.io/badge/Language-COBOL-red?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRleHQgeD0iNiIgeT0iMTgiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIj5DPC90ZXh0Pjwvc3ZnPg==)](https://en.wikipedia.org/wiki/COBOL)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)](https://github.com/Miniquique/gestionBancaria)
+[![License](https://img.shields.io/badge/License-Educational-blue?style=flat-square)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Linux%2FUnix-orange?style=flat-square)](https://www.linux.org/)
+[![GnuCOBOL](https://img.shields.io/badge/Compiler-GnuCOBOL-success?style=flat-square)](https://sourceforge.net/projects/gnucobol/)
+
 Sistema de gestión de cuentas bancarias desarrollado en **COBOL** utilizando GnuCOBOL. La aplicación permite crear cuentas, consultar saldos y realizar movimientos (depósitos y retiros) con persistencia de datos en archivos secuenciales.
 
 ## 📋 Características
 
-- **Crear Cuentas**: Registro de nuevas cuentas con número, nombre y saldo inicial
-- **Consultar Cuentas**: Lectura y visualización de datos de cuentas existentes
-- **Movimientos**: Depósitos y retiros con actualización automática de saldos
-- **Persistencia**: Almacenamiento de datos en archivos secuenciales
+- ✅ **Crear Cuentas**: Registro de nuevas cuentas con número, nombre y saldo inicial
+- ✅ **Consultar Cuentas**: Lectura y visualización de datos de cuentas existentes
+- ✅ **Movimientos**: Depósitos y retiros con actualización automática de saldos
+- ✅ **Persistencia**: Almacenamiento de datos en archivos secuenciales
 - **Interfaz Menúes**: Navegación intuitiva mediante menú interactivo
 - **Modularidad**: Estructura modular con subprogramas reutilizables
 
